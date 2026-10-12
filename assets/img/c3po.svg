@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="340" fill="#f4f6fa"/>
+  <!-- partial view A -->
+  <g fill="#4c78a8" opacity="0.85">
+    <circle cx="90" cy="120" r="4"/><circle cx="110" cy="105" r="4"/><circle cx="130" cy="96" r="4"/><circle cx="152" cy="94" r="4"/>
+    <circle cx="96" cy="145" r="4"/><circle cx="118" cy="130" r="4"/><circle cx="140" cy="120" r="4"/><circle cx="162" cy="116" r="4"/>
+    <circle cx="102" cy="170" r="4"/><circle cx="126" cy="156" r="4"/><circle cx="148" cy="146" r="4"/><circle cx="170" cy="140" r="4"/>
+    <circle cx="108" cy="195" r="4"/><circle cx="132" cy="182" r="4"/><circle cx="156" cy="172" r="4"/>
+  </g>
+  <!-- partial view B -->
+  <g fill="#f58518" opacity="0.85">
+    <circle cx="220" cy="210" r="4"/><circle cx="242" cy="214" r="4"/><circle cx="264" cy="222" r="4"/><circle cx="284" cy="234" r="4"/>
+    <circle cx="214" cy="234" r="4"/><circle cx="236" cy="240" r="4"/><circle cx="258" cy="248" r="4"/><circle cx="278" cy="260" r="4"/>
+    <circle cx="208" cy="258" r="4"/><circle cx="230" cy="264" r="4"/><circle cx="252" cy="272" r="4"/>
+  </g>
+  <text x="185" y="315" text-anchor="middle" font-size="18" fill="#555">partial views</text>
+  <!-- arrow -->
+  <path d="M360 170 H520" stroke="#555" stroke-width="3" fill="none"/>
+  <path d="M520 170 l-14 -8 v16 z" fill="#555"/>
+  <text x="440" y="155" text-anchor="middle" font-size="16" fill="#555">correspondence</text>
+  <text x="440" y="195" text-anchor="middle" font-size="16" fill="#555">features + registration</text>
+  <!-- canonical frame -->
+  <g transform="translate(700 170)">
+    <g fill="#4c78a8" opacity="0.85">
+      <circle cx="-60" cy="-40" r="4"/><circle cx="-38" cy="-46" r="4"/><circle cx="-16" cy="-50" r="4"/><circle cx="6" cy="-50" r="4"/>
+      <circle cx="-60" cy="-14" r="4"/><circle cx="-38" cy="-20" r="4"/><circle cx="-16" cy="-24" r="4"/><circle cx="6" cy="-24" r="4"/>
+      <circle cx="-60" cy="12" r="4"/><circle cx="-38" cy="6" r="4"/><circle cx="-16" cy="2" r="4"/>
+    </g>
+    <g fill="#f58518" opacity="0.85">
+      <circle cx="28" cy="-46" r="4"/><circle cx="50" cy="-40" r="4"/><circle cx="70" cy="-30" r="4"/>
+      <circle cx="28" cy="-20" r="4"/><circle cx="50" cy="-14" r="4"/><circle cx="70" cy="-4" r="4"/>
+      <circle cx="6" cy="2" r="4"/><circle cx="28" cy="6" r="4"/><circle cx="50" cy="12" r="4"/><circle cx="70" cy="22" r="4"/>
+    </g>
+    <path d="M-90 70 H-30" stroke="#e45756" stroke-width="3"/><path d="M-30 70 l-10 -6 v12 z" fill="#e45756"/>
+    <path d="M-90 70 V10" stroke="#54a24b" stroke-width="3"/><path d="M-90 10 l-6 10 h12 z" fill="#54a24b"/>
+    <path d="M-90 70 L-55 45" stroke="#4c78a8" stroke-width="3"/>
+  </g>
+  <text x="700" y="315" text-anchor="middle" font-size="18" fill="#555">canonical 3D pose</text>
+</svg>

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leonhard Sommer</title>
+  <meta name="description" content="Leonhard Sommer – PhD researcher in computer vision at the University of Freiburg. Publications on 3D pose, morphable models and canonicalization.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="profile">
+    <img class="avatar" src="assets/img/profile.jpg" alt="Leonhard Sommer" width="120" height="120">
+    <div>
+      <h1>Leonhard Sommer</h1>
+      <p class="affil">University of Freiburg</p>
+      <p class="bio">
+        I work on 3D computer vision, with a focus on learning category-level
+        3D pose, shape and correspondence from real-world images and videos
+        with little or no human supervision.
+      </p>
+      <nav class="social">
+        <a href="https://scholar.google.com/citations?user=_QifWhEAAAAJ">Google Scholar</a>
+        <a href="https://github.com/limpbot">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2>Publications</h2>
+
+    <article class="pub">
+      <img class="teaser" src="assets/img/every9d.jpg" alt="Every9D-21M teaser" loading="lazy">
+      <div class="pub-body">
+        <h3>Every9D-21M: Large-Scale Real-World 9D Canonicalization of Everyday Objects</h3>
+        <p class="authors"><b>Leonhard Sommer</b>, Emil Akopyan, Adam Kortylewski</p>
+        <p class="venue">arXiv preprint, 2026</p>
+        <p class="desc">
+          A dataset of 9D pose labels for 21.8M real-world images from 109K object-centric videos
+          across 700 everyday categories, about two orders of magnitude larger than earlier
+          real-world 9D pose benchmarks. Canonical poses are propagated from a small manually
+          annotated reference set and verified from multiple views.
+        </p>
+        <p class="links">
+          <a href="https://arxiv.org/abs/2605.28270">Paper</a>
+          <a href="https://github.com/GenIntel/Every9D">Code</a>
+          <a href="https://github.com/GenIntel/Every9D">Dataset</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="pub">
+      <img class="teaser" src="assets/img/housecorr3d.jpg" alt="HouseCorr3D / Morpheus teaser" loading="lazy">
+      <div class="pub-body">
+        <h3>Category-Level 3D Correspondence in Camera Space via Morphable Object Priors</h3>
+        <p class="authors"><b>Leonhard Sommer</b>, Artur Jesslen, Basavaraj Sunagad, Adam Kortylewski</p>
+        <p class="venue">ECCV 2026</p>
+        <p class="desc">
+          Predicts 3D locations that stay consistent across all instances of a category from a single
+          image. Introduces HouseCorr3D, a benchmark of 178k images over 50 household categories, and
+          Morpheus, which learns morphable shape priors by disentangling canonical shape, deformation
+          and pose.
+        </p>
+        <p class="links">
+          <a href="https://arxiv.org/abs/2605.28257">Paper</a>
+          <a href="https://github.com/GenIntel/HouseCorr3D">Code</a>
+          <a href="https://huggingface.co/datasets/GenIntelLab/HouseCorr3D">Dataset</a>
+          <a href="https://genintel.github.io/HouseCorr3D/">Project Page</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="pub">
+      <img class="teaser" src="assets/img/c3po.svg" alt="C3PO: aligning partial views into a canonical frame" loading="lazy">
+      <div class="pub-body">
+        <h3>C3PO: Canonicalization of 3D Pose from Partial Views with Generalizable Correspondence Features</h3>
+        <p class="authors">Y. Chi, <b>Leonhard Sommer</b>, Olaf Dünkel, Dominik Muhle, Daniel Cremers, Christian Theobalt, Adam Kortylewski</p>
+        <p class="venue">3DV 2026</p>
+        <p class="desc">
+          Canonicalizes objects of arbitrary categories from partial views. Each view is lifted to a
+          feature point cloud with features that generalize to unseen categories, and a pairwise
+          registration framework aligns the partial reconstructions into one global canonical frame.
+        </p>
+        <p class="links">
+          <a href="https://doi.org/10.1109/3dv69130.2026.00062">Paper</a>
+          <a href="https://github.com/GenIntel/C3PO">Code</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="pub">
+      <img class="teaser" src="assets/img/common3d.jpg" alt="Common3D teaser" loading="lazy">
+      <div class="pub-body">
+        <h3>Common3D: Self-Supervised Learning of 3D Morphable Models for Common Objects in Neural Feature Space</h3>
+        <p class="authors"><b>Leonhard Sommer</b>, Olaf Dünkel, Christian Theobalt, Adam Kortylewski</p>
+        <p class="venue">CVPR 2025</p>
+        <p class="desc">
+          Learns 3D morphable models of common objects from object-centric videos without any labels.
+          Objects are a learned template mesh plus an image-conditioned deformation field, with
+          appearance encoded as contrastively trained neural features, enabling zero-shot 3D pose
+          estimation and semantic correspondence.
+        </p>
+        <p class="links">
+          <a href="https://arxiv.org/abs/2504.21749">Paper</a>
+          <a href="https://github.com/GenIntel/common3d">Code</a>
+          <a href="https://genintel.github.io/common3d">Project Page</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="pub">
+      <img class="teaser" src="assets/img/uop3d.jpg" alt="Unsupervised category-level 3D pose teaser" loading="lazy">
+      <div class="pub-body">
+        <h3>Unsupervised Learning of Category-Level 3D Pose from Object-Centric Videos</h3>
+        <p class="authors"><b>Leonhard Sommer</b>, Artur Jesslen, Eddy Ilg, Adam Kortylewski</p>
+        <p class="venue">CVPR 2024</p>
+        <p class="desc">
+          Learns category-level 3D pose only from casually captured object-centric videos. A multi-view
+          alignment with a cyclic distance over coarse meshes and DINOv2 features finds canonical poses
+          across videos, which then train a single-image model predicting dense correspondences to a
+          template mesh.
+        </p>
+        <p class="links">
+          <a href="https://arxiv.org/abs/2407.04384">Paper</a>
+          <a href="https://github.com/GenIntel/uns-obj-pose3d">Code</a>
+          <a href="https://github.com/GenIntel/uns-obj-pose3d">Dataset</a>
+          <a href="https://genintel.github.io/uns-obj-pose3d">Project Page</a>
+        </p>
+      </div>
+    </article>
+
+    <article class="pub">
+      <img class="teaser" src="assets/img/sf2se3.jpg" alt="SF2SE3 result on KITTI" loading="lazy">
+      <div class="pub-body">
+        <h3>SF2SE3: Clustering Scene Flow into SE(3)-Motions via Proposal and Selection</h3>
+        <p class="authors"><b>Leonhard Sommer</b>, Philipp Schröppel, Thomas Brox</p>
+        <p class="venue">GCPR 2022</p>
+        <p class="desc">
+          Segments a scene into rigidly moving objects from two consecutive stereo or RGB-D frames by
+          repeatedly proposing SE(3) motions from sampled pixel sets and selecting the best ones under a
+          maximum-coverage formulation. On par for scene flow and more accurate for segmentation and
+          odometry than prior work.
+        </p>
+        <p class="links">
+          <a href="https://arxiv.org/abs/2209.08532">Paper</a>
+          <a href="https://github.com/lmb-freiburg/sf2se3">Code</a>
+          <a href="https://lmb.informatik.uni-freiburg.de/Publications/2022/SB22/">Project Page</a>
+        </p>
+      </div>
+    </article>
+  </main>
+
+  <footer>© 2026 Leonhard Sommer</footer>
+</body>
+</html>
